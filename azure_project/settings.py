@@ -108,7 +108,7 @@ import urllib.parse
 mongo_username = urllib.parse.quote_plus('grubkrow')
 mongo_password = urllib.parse.quote_plus('EWR2019asd')
 # MONGO_URI = 'mongodb://localhost:27017/'
-MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@kongphob-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
+MONGO_URI = f'mongodb+srv://grubkrow:{mongo_password}@kongphob-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
 MONGO_DB_NAME = 'django_store_reviews'
 
 # Password validation
