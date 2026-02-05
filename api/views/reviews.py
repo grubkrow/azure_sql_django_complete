@@ -34,13 +34,13 @@ class ReviewList(APIView):
         return response.Response(reviews)
 
     def post(self, request):
-        
-         {
-             "product_id": 1,
-             "user_id": 1,
-             "rating": 5,
-             "comment": "Great product!"
-         }
+        # Expected request body:
+        # {
+        #     "product_id": 1,
+        #     "user_id": 1,
+        #     "rating": 5,
+        #     "comment": "Great product!"
+        # }
         
         db = get_db_handle()
         collection = db['reviews']
