@@ -96,7 +96,7 @@ DATABASES = {
         'HOST': 'grubkrow.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
-            'driver': 'ODBC Driver 18 for SQL Server',
+            'driver': os.environ.get('ODBC_DRIVER', 'ODBC Driver 17 for SQL Server'),
         },
     },
 }
@@ -105,7 +105,7 @@ DATABASES = {
 import urllib.parse
 
 # MongoDB Configuration
-mongo_username = urllib.parse.quote_plus('kongphob')
+mongo_username = urllib.parse.quote_plus('grubkrow-admin')
 mongo_password = urllib.parse.quote_plus('EWR2019asd')
 # MONGO_URI = 'mongodb://localhost:27017/'
 MONGO_URI = f'mongodb+srv://{mongo_username}:{mongo_password}@kongphob-mongodb.global.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000'
