@@ -96,7 +96,7 @@ DATABASES = {
         'HOST': 'grubkrow.database.windows.net',
         'PORT': '1433',
         'OPTIONS': {
-            'driver': os.environ.get('ODBC_DRIVER', 'ODBC Driver 17 for SQL Server'),
+        'driver': os.environ.get('ODBC_DRIVER', 'ODBC Driver 17 for SQL Server'),
         },
     },
 }
